@@ -1,0 +1,186 @@
+:root {
+  color: #f3f5ff;
+  background: #0f111a;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  background: #14192b;
+  border-bottom: 1px solid #242b4a;
+}
+
+.top-bar h1 {
+  margin: 0 0 4px 0;
+  font-size: 24px;
+}
+
+.top-bar p {
+  margin: 0;
+  font-size: 14px;
+  color: #9aa3c5;
+}
+
+.status {
+  padding: 8px 12px;
+  background: #1f2540;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #d4dcff;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 320px;
+  gap: 16px;
+  padding: 24px 32px 40px;
+}
+
+.panel {
+  background: #171e34;
+  border: 1px solid #252f54;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 12px 30px rgba(6, 10, 25, 0.45);
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.sidebar input[type='file'] {
+  margin-bottom: 12px;
+}
+
+button {
+  background: #2b3468;
+  color: #f5f6ff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button.primary {
+  background: linear-gradient(135deg, #5a6cff, #7f3ff3);
+  font-weight: 600;
+}
+
+button + button {
+  margin-left: 8px;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.file-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #d2d8f5;
+}
+
+.file-list li.active,
+.file-list li:hover {
+  background: #232b4e;
+}
+
+.file-list .meta {
+  font-size: 12px;
+  color: #7f88b5;
+}
+
+.editor-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+input[type='text'],
+textarea {
+  flex: 1;
+  background: #0f1327;
+  border: 1px solid #27305c;
+  border-radius: 8px;
+  color: #f1f4ff;
+  padding: 8px 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.results {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.result-card {
+  background: #121833;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #1e264b;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #9aa3c5;
+}
+
+.result-bar {
+  background: #1b2447;
+  border-radius: 999px;
+  height: 6px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.result-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #7f3ff3, #5a6cff);
+}
+
+.response {
+  margin-top: 12px;
+  background: #0f1327;
+  border-radius: 8px;
+  border: 1px solid #27305c;
+  padding: 8px;
+  min-height: 120px;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  color: #d9def9;
+}
